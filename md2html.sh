@@ -3,7 +3,6 @@
 # this script will convert all *.md files (assumed that it has markdown syntax)
 # to self-contained html formatted document in "output" directory at the same
 # level of where this script reside.
-# uncomment the below setting to see what happen behind the screen
 
 # tested on Ubuntu 16.04 LTS (xenial)
 # prerequisite: 
@@ -13,7 +12,9 @@
 # to see what you can write in your markdown page:
 # man pandoc 
 
+# uncomment the below setting to switch on debug mode
 # set -x
+
 DIR=$(dirname $0)
 TARGET_DIR="$(dirname $DIR)/output"
 
